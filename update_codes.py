@@ -4,7 +4,7 @@ from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
 
-# הגדרת רשימת המקורות לשאיפת קודי Roblox
+# הגדרת רשימת המקורות העדכניים לשאיפת קודי Roblox
 SOURCES = [
     {"name": "Pro Game Guides", "url": "https://progameguides.com/roblox/roblox-promocodes/"},
     {"name": "Pocket Tactics", "url": "https://www.pockettactics.com/roblox/codes-list"},
@@ -14,7 +14,8 @@ SOURCES = [
 IGNORE_TOKENS = {
     "DOCTYPE", "HTML", "HEAD", "BODY", "ACTIVITIES", "CAMPAIGNS", 
     "ROBLOX", "GAMES", "UPDATE", "NEWS", "GUIDE", "FREE", "REWARDS", 
-    "ROBUX", "ITEMS", "AVATAR", "COMMUNITY", "PROMO", "CODES"
+    "ROBUX", "ITEMS", "AVATAR", "COMMUNITY", "PROMO", "CODES", "SIGN",
+    "LOGIN", "ACCOUNT", "PASSWORD", "SETTINGS", "PRIVACY", "TERMS"
 }
 
 # רשימת מילים נפוצות שאתרים משתמשים בהן ולא קשורים לקודים
@@ -49,7 +50,6 @@ ENGLISH_WORDS_BLOCKLIST = {
     "FOLLOW", "MILESTONES", "WELCOME", "JOINING", "USUALLY", "LOADOUT", "WORTH", "BUFFS", "GIVES"
 }
 
-# מילות מפתח לזיהוי פרסים מיוחדים או בלעדיים ברובולוקס
 SPECIAL_KEYWORDS = {"EXCLUSIVE", "LIMITED", "SPECIAL", "EVENT"}
 
 def clean_and_validate_code(token):
@@ -68,33 +68,28 @@ def clean_and_validate_code(token):
     if token.isdigit():
         return None
         
-    # תנאי ברזל: קוד Roblox לגיטימי מכיל בדרך כלל שילוב אותיות/מספרים או תחיליות מוכרות, 
-    # או שהוא מורכב מטקסט ייחודי באותיות גדולות ללא רווחים.
-    has_digit = any(char.isdigit() for char in token)
-    is_alpha_code = token.isalnum() and len(token) >= 6
-    
-    if not (has_digit or is_alpha_code):
-        return None
-        
+    # תנאי מותאם: מאפשר קודים באורך מתאים ללא צורך בתנאים נוקשים מידי
     return token
 
 def scrape_source(source_info):
-    """שאיבת קודים ממקור בודד"""
+    """שאיבת קודים ממקור בודד עם סריקת טבלאות ואלמנטים רחבים יותר"""
     found_codes = set()
     try:
         headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
-        response = requests.get(source_info["url"], headers=headers, timeout=10)
+        response = requests.get(source_info["url"], headers=headers, timeout=15)
         if response.status_code == 200:
             soup = BeautifulSoup(response.text, 'html.parser')
             
-            for element in soup.find_all(['p', 'li', 'td', 'code', 'strong', 'span']):
+            # סריקת אלמנטים מרכזיים שבהם אתרים נוהגים לשים קודים (כולל טבלאות ותגיות הדגשה)
+            for element in soup.find_all(['tr', 'td', 'th', 'li', 'code', 'strong', 'b', 'span', 'p']):
                 text = element.get_text()
-                # חיפוש תבניות טקסט שמתאימות לקודי רובולוקס (אותיות ומספרים ללא רווחים)
-                matches = re.findall(r'\b[A-Z0-9\-_]{5,25}\b', text.upper())
+                # חיפוש מחרוזות באותיות ומספרים שמתאימות למבנה של קודים
+                matches = re.findall(r'\b[A-Z0-9\-_]{4,20}\b', text.upper())
                 for match in matches:
                     valid_code = clean_and_validate_code(match)
                     if valid_code:
                         found_codes.add(valid_code)
+                        
         print(f"[{source_info['name']}] Found {len(found_codes)} clean codes.")
     except Exception as e:
         print(f"Error scraping {source_info['name']}: {e}")
@@ -102,7 +97,7 @@ def scrape_source(source_info):
     return found_codes
 
 def main():
-    print("Starting Roblox Clean Aggregator v1.0...")
+    print("Starting Roblox Clean Aggregator v2.0...")
     
     code_consensus = {}
     
