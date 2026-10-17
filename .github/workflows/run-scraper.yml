@@ -1,6 +1,3 @@
-permissions:
-  contents: write
-
 name: Run Roblox Scraper
 
 on:
@@ -9,7 +6,7 @@ on:
   workflow_dispatch: # מאפשר כפתור הפעלה ידנית
 
 permissions:
-  contents: write # נותן הרשאה לסקריפט לשמור את קובץ ה-JSON בחזרה לריפוזטורי
+  contents: write # נותן הרשאה מלאה לסקריפט לשמור את קובץ ה-JSON בחזרה לריפוזטורי
 
 jobs:
   run-scraper:
