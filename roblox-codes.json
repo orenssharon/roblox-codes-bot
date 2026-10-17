@@ -1,6 +1,52 @@
 {
-  "last_updated": "2026-10-17 20:15:17 UTC",
-  "total_active": 0,
-  "total_rare": 0,
-  "codes": []
+  "last_updated": "2026-10-17 20:18:16 UTC",
+  "total_active": 3,
+  "total_rare": 2,
+  "codes": [
+    {
+      "code": "ROBLOXEDU2021",
+      "reward": "Dev Deck Fingernail / Build It",
+      "status": "Limited / Special",
+      "badge": "rare",
+      "source": "Verified Database Vault",
+      "date": "Synced: Oct 2026",
+      "score": 150
+    },
+    {
+      "code": "TARGETMINTS2023",
+      "reward": "Mint Candy Staff",
+      "status": "Limited / Special",
+      "badge": "rare",
+      "source": "Verified Database Vault",
+      "date": "Synced: Oct 2026",
+      "score": 150
+    },
+    {
+      "code": "SPIDERCOLA",
+      "reward": "Spider Cola Shoulder Pet",
+      "status": "Active",
+      "badge": "active",
+      "source": "Verified Database Vault",
+      "date": "Synced: Oct 2026",
+      "score": 100
+    },
+    {
+      "code": "TWEETROBLOX",
+      "reward": "The Bird Says The Social Shield",
+      "status": "Active",
+      "badge": "active",
+      "source": "Verified Database Vault",
+      "date": "Synced: Oct 2026",
+      "score": 100
+    },
+    {
+      "code": "STREETCHIC",
+      "reward": "Street Chic Hoodie",
+      "status": "Active",
+      "badge": "active",
+      "source": "Verified Database Vault",
+      "date": "Synced: Oct 2026",
+      "score": 100
+    }
+  ]
 }
