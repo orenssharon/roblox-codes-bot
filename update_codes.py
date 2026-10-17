@@ -4,21 +4,19 @@ from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
 
-# הגדרת רשימת המקורות העדכניים לשאיפת קודי Roblox
+# הגדרת רשימת מקורות חלופיים וישירים יותר לרובולוקס
 SOURCES = [
-    {"name": "Pro Game Guides", "url": "https://progameguides.com/roblox/roblox-promocodes/"},
+    {"name": "Roblox Promo Codes Wiki", "url": "https://roblox.fandom.com/wiki/Promo_codes"},
     {"name": "Pocket Tactics", "url": "https://www.pockettactics.com/roblox/codes-list"},
 ]
 
-# מילות מערכת ומילים נפוצות באנגלית שחובה לחסום
 IGNORE_TOKENS = {
     "DOCTYPE", "HTML", "HEAD", "BODY", "ACTIVITIES", "CAMPAIGNS", 
     "ROBLOX", "GAMES", "UPDATE", "NEWS", "GUIDE", "FREE", "REWARDS", 
     "ROBUX", "ITEMS", "AVATAR", "COMMUNITY", "PROMO", "CODES", "SIGN",
-    "LOGIN", "ACCOUNT", "PASSWORD", "SETTINGS", "PRIVACY", "TERMS"
+    "LOGIN", "ACCOUNT", "PASSWORD", "SETTINGS", "PRIVACY", "TERMS", "WIKI"
 }
 
-# רשימת מילים נפוצות שאתרים משתמשים בהן ולא קשורים לקודים
 ENGLISH_WORDS_BLOCKLIST = {
     "DISCORD", "PLAYERS", "CHECK", "COMMUNITY", "SHARE", "FIRST", 
     "SELECT", "TERMS", "USEFUL", "OBJECTIVES", "SEARCHING", "WHILE", 
@@ -53,38 +51,33 @@ ENGLISH_WORDS_BLOCKLIST = {
 SPECIAL_KEYWORDS = {"EXCLUSIVE", "LIMITED", "SPECIAL", "EVENT"}
 
 def clean_and_validate_code(token):
-    """בדיקה האם הטוקן עומד בתנאי הסף לקוד תקין ואמיתי של רובולוקס"""
     token = token.upper().strip()
-    
-    # סינון לפי אורך (קודי רובולוקס לרוב באורך 4 עד 25 תווים)
     if not (4 <= len(token) <= 25):
         return None
-        
-    # חסימת מילים מהרשימות השחורות
     if token in IGNORE_TOKENS or token in ENGLISH_WORDS_BLOCKLIST:
         return None
-        
-    # מניעת מחרוזות שהן מספרים נקיים בלבד
     if token.isdigit():
         return None
-        
-    # תנאי מותאם: מאפשר קודים באורך מתאים ללא צורך בתנאים נוקשים מידי
     return token
 
 def scrape_source(source_info):
-    """שאיבת קודים ממקור בודד עם סריקת טבלאות ואלמנטים רחבים יותר"""
     found_codes = set()
     try:
-        headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+        # שימוש ב-Headers מתקדמים יותר כדי לדמות דפדפן אמיתי לחלוטין
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Accept-Language": "en-US,en;q=0.9",
+        }
         response = requests.get(source_info["url"], headers=headers, timeout=15)
+        print(f"[{source_info['name']}] HTTP Status Code: {response.status_code}")
+        
         if response.status_code == 200:
             soup = BeautifulSoup(response.text, 'html.parser')
             
-            # סריקת אלמנטים מרכזיים שבהם אתרים נוהגים לשים קודים (כולל טבלאות ותגיות הדגשה)
-            for element in soup.find_all(['tr', 'td', 'th', 'li', 'code', 'strong', 'b', 'span', 'p']):
+            # סריקת כל הטבלאות, השורות והקישורים בעמוד
+            for element in soup.find_all(['table', 'tr', 'td', 'li', 'code', 'b', 'strong', 'a']):
                 text = element.get_text()
-                # חיפוש מחרוזות באותיות ומספרים שמתאימות למבנה של קודים
-                matches = re.findall(r'\b[A-Z0-9\-_]{4,20}\b', text.upper())
+                matches = re.findall(r'\b[A-Z0-9\-_]{5,25}\b', text.upper())
                 for match in matches:
                     valid_code = clean_and_validate_code(match)
                     if valid_code:
@@ -97,7 +90,7 @@ def scrape_source(source_info):
     return found_codes
 
 def main():
-    print("Starting Roblox Clean Aggregator v2.0...")
+    print("Starting Roblox Clean Aggregator v3.0...")
     
     code_consensus = {}
     
@@ -140,7 +133,6 @@ def main():
             "score": score
         })
 
-    # מיון לפי ציון
     processed_codes.sort(key=lambda x: x["score"], reverse=True)
 
     output_data = {
