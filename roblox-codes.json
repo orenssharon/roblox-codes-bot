@@ -1,265 +1,115 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-11-19T06:00:21+00:00",
+  "last_updated": "2026-11-19T19:58:36+00:00",
   "sources_checked": 4,
   "sources_succeeded": 4,
   "minimum_sources_required": 2,
-  "total_discovered": 84,
-  "total_cross_listed": 16,
+  "total_discovered": 76,
+  "total_cross_listed": 12,
   "codes": [
     {
       "code": "BOARDWALK",
       "reward": "Ring of Flames",
       "scope": "Mansion of Wonder",
       "status": "reported_active_unverified",
-      "source_count": 4,
+      "source_count": 3,
       "sources": [
         {
           "source": "GamesRadar",
           "url": "https://www.gamesradar.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
+          "observed_at": "2026-11-19T19:58:34+00:00"
         },
         {
           "source": "iGeeksBlog",
           "url": "https://www.igeeksblog.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
+          "observed_at": "2026-11-19T19:58:35+00:00"
         },
         {
           "source": "TheTechBasket",
           "url": "https://www.thetechbasket.com/promo-codes/",
-          "observed_at": "2026-11-19T06:00:19+00:00"
-        },
-        {
-          "source": "CouponVPS",
-          "url": "https://couponvps.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:19+00:00"
+          "observed_at": "2026-11-19T19:58:35+00:00"
         }
       ],
       "verification": "Cross-listed by multiple editorial sources; not directly verified with Roblox redemption.",
-      "first_seen_in_this_run": "2026-11-19T06:00:21+00:00"
+      "first_seen_in_this_run": "2026-11-19T19:58:36+00:00"
     },
     {
       "code": "FXARTIST",
       "reward": "Artist Backpack",
       "scope": "Mansion of Wonder",
       "status": "reported_active_unverified",
-      "source_count": 4,
+      "source_count": 3,
       "sources": [
         {
           "source": "GamesRadar",
           "url": "https://www.gamesradar.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
+          "observed_at": "2026-11-19T19:58:34+00:00"
         },
         {
           "source": "iGeeksBlog",
           "url": "https://www.igeeksblog.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
+          "observed_at": "2026-11-19T19:58:35+00:00"
         },
         {
           "source": "TheTechBasket",
           "url": "https://www.thetechbasket.com/promo-codes/",
-          "observed_at": "2026-11-19T06:00:19+00:00"
-        },
-        {
-          "source": "CouponVPS",
-          "url": "https://couponvps.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:19+00:00"
+          "observed_at": "2026-11-19T19:58:35+00:00"
         }
       ],
       "verification": "Cross-listed by multiple editorial sources; not directly verified with Roblox redemption.",
-      "first_seen_in_this_run": "2026-11-19T06:00:21+00:00"
+      "first_seen_in_this_run": "2026-11-19T19:58:36+00:00"
     },
     {
       "code": "GLIMMER",
       "reward": "Head Slime",
       "scope": "Mansion of Wonder",
       "status": "reported_active_unverified",
-      "source_count": 4,
+      "source_count": 3,
       "sources": [
         {
           "source": "GamesRadar",
           "url": "https://www.gamesradar.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
+          "observed_at": "2026-11-19T19:58:34+00:00"
         },
         {
           "source": "iGeeksBlog",
           "url": "https://www.igeeksblog.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
+          "observed_at": "2026-11-19T19:58:35+00:00"
         },
         {
           "source": "TheTechBasket",
           "url": "https://www.thetechbasket.com/promo-codes/",
-          "observed_at": "2026-11-19T06:00:19+00:00"
-        },
-        {
-          "source": "CouponVPS",
-          "url": "https://couponvps.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:19+00:00"
+          "observed_at": "2026-11-19T19:58:35+00:00"
         }
       ],
       "verification": "Cross-listed by multiple editorial sources; not directly verified with Roblox redemption.",
-      "first_seen_in_this_run": "2026-11-19T06:00:21+00:00"
+      "first_seen_in_this_run": "2026-11-19T19:58:36+00:00"
     },
     {
       "code": "SPIDERCOLA",
       "reward": "Spider Cola shoulder accessory",
       "scope": "global",
       "status": "reported_active_unverified",
-      "source_count": 4,
+      "source_count": 3,
       "sources": [
         {
           "source": "GamesRadar",
           "url": "https://www.gamesradar.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
+          "observed_at": "2026-11-19T19:58:34+00:00"
         },
         {
           "source": "iGeeksBlog",
           "url": "https://www.igeeksblog.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
+          "observed_at": "2026-11-19T19:58:35+00:00"
         },
         {
           "source": "TheTechBasket",
           "url": "https://www.thetechbasket.com/promo-codes/",
-          "observed_at": "2026-11-19T06:00:19+00:00"
-        },
-        {
-          "source": "CouponVPS",
-          "url": "https://couponvps.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:19+00:00"
+          "observed_at": "2026-11-19T19:58:35+00:00"
         }
       ],
       "verification": "Cross-listed by multiple editorial sources; not directly verified with Roblox redemption.",
-      "first_seen_in_this_run": "2026-11-19T06:00:21+00:00"
-    },
-    {
-      "code": "DIY",
-      "reward": "Kinetic Staff",
-      "scope": "Island of Move",
-      "status": "reported_active_unverified",
-      "source_count": 3,
-      "sources": [
-        {
-          "source": "GamesRadar",
-          "url": "https://www.gamesradar.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
-        },
-        {
-          "source": "TheTechBasket",
-          "url": "https://www.thetechbasket.com/promo-codes/",
-          "observed_at": "2026-11-19T06:00:19+00:00"
-        },
-        {
-          "source": "CouponVPS",
-          "url": "https://couponvps.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:19+00:00"
-        }
-      ],
-      "verification": "Cross-listed by multiple editorial sources; not directly verified with Roblox redemption.",
-      "first_seen_in_this_run": "2026-11-19T06:00:21+00:00"
-    },
-    {
-      "code": "GETMOVING",
-      "reward": "Speedy Shades",
-      "scope": "Island of Move",
-      "status": "reported_active_unverified",
-      "source_count": 3,
-      "sources": [
-        {
-          "source": "GamesRadar",
-          "url": "https://www.gamesradar.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
-        },
-        {
-          "source": "TheTechBasket",
-          "url": "https://www.thetechbasket.com/promo-codes/",
-          "observed_at": "2026-11-19T06:00:19+00:00"
-        },
-        {
-          "source": "CouponVPS",
-          "url": "https://couponvps.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:19+00:00"
-        }
-      ],
-      "verification": "Cross-listed by multiple editorial sources; not directly verified with Roblox redemption.",
-      "first_seen_in_this_run": "2026-11-19T06:00:21+00:00"
-    },
-    {
-      "code": "PARTICLEWIZARD",
-      "reward": "Tome of the Magus",
-      "scope": "Mansion of Wonder",
-      "status": "reported_active_unverified",
-      "source_count": 3,
-      "sources": [
-        {
-          "source": "GamesRadar",
-          "url": "https://www.gamesradar.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
-        },
-        {
-          "source": "iGeeksBlog",
-          "url": "https://www.igeeksblog.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
-        },
-        {
-          "source": "CouponVPS",
-          "url": "https://couponvps.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:19+00:00"
-        }
-      ],
-      "verification": "Cross-listed by multiple editorial sources; not directly verified with Roblox redemption.",
-      "first_seen_in_this_run": "2026-11-19T06:00:21+00:00"
-    },
-    {
-      "code": "SETTINGTHESTAGE",
-      "reward": "Build It Backpack",
-      "scope": "Island of Move",
-      "status": "reported_active_unverified",
-      "source_count": 3,
-      "sources": [
-        {
-          "source": "GamesRadar",
-          "url": "https://www.gamesradar.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
-        },
-        {
-          "source": "TheTechBasket",
-          "url": "https://www.thetechbasket.com/promo-codes/",
-          "observed_at": "2026-11-19T06:00:19+00:00"
-        },
-        {
-          "source": "CouponVPS",
-          "url": "https://couponvps.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:19+00:00"
-        }
-      ],
-      "verification": "Cross-listed by multiple editorial sources; not directly verified with Roblox redemption.",
-      "first_seen_in_this_run": "2026-11-19T06:00:21+00:00"
-    },
-    {
-      "code": "THINGSGOBOOM",
-      "reward": "Ghastly Aura",
-      "scope": "Mansion of Wonder",
-      "status": "reported_active_unverified",
-      "source_count": 3,
-      "sources": [
-        {
-          "source": "GamesRadar",
-          "url": "https://www.gamesradar.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
-        },
-        {
-          "source": "iGeeksBlog",
-          "url": "https://www.igeeksblog.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
-        },
-        {
-          "source": "CouponVPS",
-          "url": "https://couponvps.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:19+00:00"
-        }
-      ],
-      "verification": "Cross-listed by multiple editorial sources; not directly verified with Roblox redemption.",
-      "first_seen_in_this_run": "2026-11-19T06:00:21+00:00"
+      "first_seen_in_this_run": "2026-11-19T19:58:36+00:00"
     },
     {
       "code": "IN-GAME",
@@ -271,25 +121,25 @@
         {
           "source": "GamesRadar",
           "url": "https://www.gamesradar.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
+          "observed_at": "2026-11-19T19:58:34+00:00"
         },
         {
           "source": "iGeeksBlog",
           "url": "https://www.igeeksblog.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
+          "observed_at": "2026-11-19T19:58:35+00:00"
         },
         {
           "source": "TheTechBasket",
           "url": "https://www.thetechbasket.com/promo-codes/",
-          "observed_at": "2026-11-19T06:00:19+00:00"
+          "observed_at": "2026-11-19T19:58:35+00:00"
         }
       ],
       "verification": "Cross-listed by multiple editorial sources; not directly verified with Roblox redemption.",
-      "first_seen_in_this_run": "2026-11-19T06:00:21+00:00"
+      "first_seen_in_this_run": "2026-11-19T19:58:36+00:00"
     },
     {
-      "code": "STRIKEAPOSE",
-      "reward": "Hustle Hat",
+      "code": "DIY",
+      "reward": "Kinetic Staff",
       "scope": "Island of Move",
       "status": "reported_active_unverified",
       "source_count": 2,
@@ -297,20 +147,20 @@
         {
           "source": "GamesRadar",
           "url": "https://www.gamesradar.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
+          "observed_at": "2026-11-19T19:58:34+00:00"
         },
         {
-          "source": "CouponVPS",
-          "url": "https://couponvps.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:19+00:00"
+          "source": "TheTechBasket",
+          "url": "https://www.thetechbasket.com/promo-codes/",
+          "observed_at": "2026-11-19T19:58:35+00:00"
         }
       ],
       "verification": "Cross-listed by multiple editorial sources; not directly verified with Roblox redemption.",
-      "first_seen_in_this_run": "2026-11-19T06:00:21+00:00"
+      "first_seen_in_this_run": "2026-11-19T19:58:36+00:00"
     },
     {
-      "code": "VICTORYLAP",
-      "reward": "Cardio Cans",
+      "code": "GETMOVING",
+      "reward": "Speedy Shades",
       "scope": "Island of Move",
       "status": "reported_active_unverified",
       "source_count": 2,
@@ -318,58 +168,79 @@
         {
           "source": "GamesRadar",
           "url": "https://www.gamesradar.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
+          "observed_at": "2026-11-19T19:58:34+00:00"
         },
         {
-          "source": "CouponVPS",
-          "url": "https://couponvps.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:19+00:00"
+          "source": "TheTechBasket",
+          "url": "https://www.thetechbasket.com/promo-codes/",
+          "observed_at": "2026-11-19T19:58:35+00:00"
         }
       ],
       "verification": "Cross-listed by multiple editorial sources; not directly verified with Roblox redemption.",
-      "first_seen_in_this_run": "2026-11-19T06:00:21+00:00"
+      "first_seen_in_this_run": "2026-11-19T19:58:36+00:00"
     },
     {
-      "code": "WORLDALIVE",
-      "reward": "Crystalline Companion",
-      "scope": "Island of Move",
+      "code": "PARTICLEWIZARD",
+      "reward": "Tome of the Magus",
+      "scope": "Mansion of Wonder",
       "status": "reported_active_unverified",
       "source_count": 2,
       "sources": [
         {
           "source": "GamesRadar",
           "url": "https://www.gamesradar.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
+          "observed_at": "2026-11-19T19:58:34+00:00"
         },
-        {
-          "source": "CouponVPS",
-          "url": "https://couponvps.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:19+00:00"
-        }
-      ],
-      "verification": "Cross-listed by multiple editorial sources; not directly verified with Roblox redemption.",
-      "first_seen_in_this_run": "2026-11-19T06:00:21+00:00"
-    },
-    {
-      "code": "CASE-SENSITIVE",
-      "reward": "Reward not independently confirmed",
-      "scope": "unknown",
-      "status": "reported_active_unverified",
-      "source_count": 2,
-      "sources": [
         {
           "source": "iGeeksBlog",
           "url": "https://www.igeeksblog.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
-        },
-        {
-          "source": "CouponVPS",
-          "url": "https://couponvps.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:19+00:00"
+          "observed_at": "2026-11-19T19:58:35+00:00"
         }
       ],
       "verification": "Cross-listed by multiple editorial sources; not directly verified with Roblox redemption.",
-      "first_seen_in_this_run": "2026-11-19T06:00:21+00:00"
+      "first_seen_in_this_run": "2026-11-19T19:58:36+00:00"
+    },
+    {
+      "code": "SETTINGTHESTAGE",
+      "reward": "Build It Backpack",
+      "scope": "Island of Move",
+      "status": "reported_active_unverified",
+      "source_count": 2,
+      "sources": [
+        {
+          "source": "GamesRadar",
+          "url": "https://www.gamesradar.com/roblox-promo-codes/",
+          "observed_at": "2026-11-19T19:58:34+00:00"
+        },
+        {
+          "source": "TheTechBasket",
+          "url": "https://www.thetechbasket.com/promo-codes/",
+          "observed_at": "2026-11-19T19:58:35+00:00"
+        }
+      ],
+      "verification": "Cross-listed by multiple editorial sources; not directly verified with Roblox redemption.",
+      "first_seen_in_this_run": "2026-11-19T19:58:36+00:00"
+    },
+    {
+      "code": "THINGSGOBOOM",
+      "reward": "Ghastly Aura",
+      "scope": "Mansion of Wonder",
+      "status": "reported_active_unverified",
+      "source_count": 2,
+      "sources": [
+        {
+          "source": "GamesRadar",
+          "url": "https://www.gamesradar.com/roblox-promo-codes/",
+          "observed_at": "2026-11-19T19:58:34+00:00"
+        },
+        {
+          "source": "iGeeksBlog",
+          "url": "https://www.igeeksblog.com/roblox-promo-codes/",
+          "observed_at": "2026-11-19T19:58:35+00:00"
+        }
+      ],
+      "verification": "Cross-listed by multiple editorial sources; not directly verified with Roblox redemption.",
+      "first_seen_in_this_run": "2026-11-19T19:58:36+00:00"
     },
     {
       "code": "SMYTHSCAT2021",
@@ -381,16 +252,16 @@
         {
           "source": "GamesRadar",
           "url": "https://www.gamesradar.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
+          "observed_at": "2026-11-19T19:58:34+00:00"
         },
         {
           "source": "iGeeksBlog",
           "url": "https://www.igeeksblog.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
+          "observed_at": "2026-11-19T19:58:35+00:00"
         }
       ],
       "verification": "Cross-listed by multiple editorial sources; not directly verified with Roblox redemption.",
-      "first_seen_in_this_run": "2026-11-19T06:00:21+00:00"
+      "first_seen_in_this_run": "2026-11-19T19:58:36+00:00"
     },
     {
       "code": "TIME-LIMITED",
@@ -402,16 +273,16 @@
         {
           "source": "GamesRadar",
           "url": "https://www.gamesradar.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
+          "observed_at": "2026-11-19T19:58:34+00:00"
         },
         {
           "source": "iGeeksBlog",
           "url": "https://www.igeeksblog.com/roblox-promo-codes/",
-          "observed_at": "2026-11-19T06:00:18+00:00"
+          "observed_at": "2026-11-19T19:58:35+00:00"
         }
       ],
       "verification": "Cross-listed by multiple editorial sources; not directly verified with Roblox redemption.",
-      "first_seen_in_this_run": "2026-11-19T06:00:21+00:00"
+      "first_seen_in_this_run": "2026-11-19T19:58:36+00:00"
     }
   ],
   "source_health": [
@@ -422,7 +293,7 @@
       "http_status": 200,
       "candidate_count": 25,
       "error": null,
-      "fetched_at": "2026-11-19T06:00:18+00:00"
+      "fetched_at": "2026-11-19T19:58:34+00:00"
     },
     {
       "name": "iGeeksBlog",
@@ -431,25 +302,25 @@
       "http_status": 200,
       "candidate_count": 57,
       "error": null,
-      "fetched_at": "2026-11-19T06:00:18+00:00"
+      "fetched_at": "2026-11-19T19:58:35+00:00"
     },
     {
       "name": "TheTechBasket",
       "url": "https://www.thetechbasket.com/promo-codes/",
       "success": true,
       "http_status": 200,
-      "candidate_count": 10,
+      "candidate_count": 11,
       "error": null,
-      "fetched_at": "2026-11-19T06:00:19+00:00"
+      "fetched_at": "2026-11-19T19:58:35+00:00"
     },
     {
       "name": "CouponVPS",
       "url": "https://couponvps.com/roblox-promo-codes/",
       "success": true,
       "http_status": 200,
-      "candidate_count": 22,
+      "candidate_count": 0,
       "error": null,
-      "fetched_at": "2026-11-19T06:00:19+00:00"
+      "fetched_at": "2026-11-19T19:58:35+00:00"
     }
   ],
   "important_note": "Cross-source agreement does not prove a code is redeemable. Roblox promo codes can expire and must be tested on Roblox. Codes for Island of Move and Mansion of Wonder are redeemed inside those experiences, not on the global promo page."
